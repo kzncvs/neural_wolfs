@@ -19,7 +19,7 @@ del toloka_result['link']
 
 toloka_result['text'] = toloka_result['text'].apply(normalize)
 toloka_result = toloka_result.loc[
-    (toloka_result['text'] != '') & (toloka_result['text'] is not None)
+    (toloka_result['text'] != '') & (toloka_result['text'] is not None) & (toloka_result['is_wolf'])
 ].drop_duplicates()
 
 dataset = toloka_result.to_dict(orient='records')
