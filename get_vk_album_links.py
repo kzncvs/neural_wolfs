@@ -48,7 +48,9 @@ for public_id in config.wolf_meme_public_ids:
             offset=offset
         )
         for album_photo in album_photos_slice['items']:
-            prepared_photos.append(prepare_album_item(album_photo))
+            prepared = prepare_album_item(album_photo)
+            if prepared['date'] > 1518480000:
+                prepared_photos.append(prepared)
             photos_handled += 1
         if photos_handled >= album_photos_slice['count']:
             break

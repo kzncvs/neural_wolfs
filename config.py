@@ -7,5 +7,6 @@ wolfs_from_vk_file = 'auf.json'
 
 wolf_meme_public_ids = [
     -82249143,
-    -181151192
+    -181151192,
+    -178296201
 ]
