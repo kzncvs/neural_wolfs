@@ -25,7 +25,6 @@ approved = approved.rename(
         "OUTPUT:is_wolf": "is_wolf"
     }
 )
-print(approved)
 approved_dict = approved.to_dict(orient='records')
 with open(config.toloka_result_json, 'w') as file:
     file.write(json.dumps(approved_dict, ensure_ascii=False, indent=2))

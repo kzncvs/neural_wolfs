@@ -17,3 +17,5 @@ toloka_etalon_pool_id = 15009747
 toloka_tasksuite_size = 20
 toloka_result_tsv = 'toloka_1st_try.tsv'
 toloka_result_json = 'toloka_result.json'
+
+dataset_json = 'dataset.json'
