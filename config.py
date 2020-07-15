@@ -10,3 +10,8 @@ wolf_meme_public_ids = [
     -181151192,
     -178296201
 ]
+
+toloka_token = os.getenv('toloka_token')
+toloka_api_url = 'toloka.yandex.ru'
+toloka_etalon_pool_id = 15009747
+toloka_tasksuite_size = 15
