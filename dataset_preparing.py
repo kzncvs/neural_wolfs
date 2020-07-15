@@ -22,6 +22,8 @@ toloka_result = toloka_result.loc[
     (toloka_result['text'] != '') & (toloka_result['text'] is not None) & (toloka_result['is_wolf'])
 ].drop_duplicates()
 
+del toloka_result['is_wolf']
+
 dataset = toloka_result.to_dict(orient='records')
 with open(config.dataset_json, 'w') as file:
     file.write(json.dumps(dataset, ensure_ascii=False, indent=2))
